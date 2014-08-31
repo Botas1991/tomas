@@ -7,25 +7,65 @@
     <link href="styly/default.css" rel="stylesheet"/>
     <script src="js/default.js" type="text/javascript"></script>
     <title>Moje osobni stranka</title>
+    <style type="text/css">
+        .style1
+        {
+            width: 141px;
+        }
+        .style2
+        {
+            width: 60px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="Header">
-
-        </div>
-        <div class="Content">
-         <p>
-            Content
+        <p>
+            IS článků
          </p>
         </div>
-            <input id="input1" type="text" />
-            <a href="#" onclick="upozorneni(input1.value)">klikni</a>
 
-        <div class="Footer">
-       
-        Footer
-        
+
+        <div class="Content">
+  
+ 
+    
+        <asp:Label ID="Label1" runat="server" Text="Titulek: "></asp:Label>
+        <asp:TextBox ID="TextBox1" runat="server" Width="93px"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="Článek: "></asp:Label>
+        <asp:TextBox ID="TextBox2" runat="server" Width="345px" Height="80px"></asp:TextBox>
+        <br />
+        <br />
+
+        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="vložit" />
         </div>
+        
+
+
+       
+        <table class="center">
+        <tr> 
+        
+        <td class="style2">  <img src="http://wiki.rvp.cz/@api/deki/files/12845/=kniha.jpg" alt="Book" width="60" height="60"/>   </td>
+        
+         <td>
+          <p>
+            Footer
+            </p>
+             </td> 
+             <td>
+         <img src="http://wiki.rvp.cz/@api/deki/files/12845/=kniha.jpg" alt="Book" height="60" width="60px"/>
+         
+         </td>
+         
+        </tr> 
+        </table>  
+        </div>
+
+
     </form>
 </body>
 </html>
