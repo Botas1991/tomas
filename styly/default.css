@@ -1,0 +1,22 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;    
+}
+
+.Header
+{
+    background: red;
+    height:100px;
+}
+
+.Content
+{
+    background: blue;
+}
+
+.Footer
+{
+    background: orange;
+    height:100px;
+}
