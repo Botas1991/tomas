@@ -41,13 +41,7 @@ public class Article
         set { id = value; }
 
     }
-    public string prop_path
-    {
 
-        get { return path; }
-        set { path = value; }
-
-    }
 
     public int Read()
     {
