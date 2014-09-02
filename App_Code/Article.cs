@@ -11,6 +11,7 @@ public class Article
     private string tittle;
     private string paragraph;
     private string path = "C:\\www\\tomas\\DB.txt";
+    //private string path="C:\\Users\\Botas\\Desktop\\www\\tomas\\DB.txt";
 	
     public Article(int id, string tittle, string paragraph)
 	{

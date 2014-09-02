@@ -17,8 +17,8 @@
             <ul>
                 <li class="navigation_first_item"><a href="default.aspx">Home</a></li>
                 <li><a href="Content.aspx">Content</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">About us</a></li>
+                <li><a href="Contact.aspx">Contact us</a></li>
+                <li><a href="About.aspx">About us</a></li>
             </ul>
          </div>   
          <div class="clear"> </div>
