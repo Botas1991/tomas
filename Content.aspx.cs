@@ -7,10 +7,7 @@ using System.Web.UI.WebControls;
 
 public partial class Content : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
 
-    }
 
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -21,6 +18,8 @@ public partial class Content : System.Web.UI.Page
         a.prop_paragraph = TextBox2.Text; 
         a.Write();
         Button2_Click(sender, e);
+        TextBox1.Text = "";
+        TextBox2.Text = "";
     }
 
     protected void Button2_Click(object sender, EventArgs e)
@@ -44,6 +43,9 @@ public partial class Content : System.Web.UI.Page
         Article a = new Article(Convert.ToInt32(TextBox3.Text), TextBox4.Text, TextBox5.Text);
         a.Update();
         Button2_Click(sender,e);
+        TextBox5.Text = "";
+        TextBox4.Text = "";
+        TextBox3.Text = "";
     }
 
     protected void Button4_Click(object sender, EventArgs e)
@@ -52,6 +54,7 @@ public partial class Content : System.Web.UI.Page
         Article a = new Article();
         a.Delete(TextBox6.Text);
         Button2_Click(sender, e);
+        TextBox6.Text = "";
     }
 
 }

@@ -1,9 +1,9 @@
 ﻿/*Master Page*/
 
-body,div,p,ul,li 
+body 
 {
-    padding:0;
-    margin:0;
+    padding:0px 100px 0px 100px;
+    margin:0px 100px 0px 100px;
    
 }
 
@@ -31,11 +31,10 @@ body
     width:100%;
     background-color: rgb(254,254,254);
     border: 1px solid rgb(224,224,224);
-    height: 700px;
     float: left;
     margin-top: 8px;
     margin-bottom:8px;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .menu
