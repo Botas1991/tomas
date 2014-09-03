@@ -3,39 +3,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
- <title>
-    <asp:ContentPlaceHolder id="Tittle" runat="server"> </asp:ContentPlaceHolder>
-  </title>
-    <asp:ContentPlaceHolder id="Head" runat="server"> </asp:ContentPlaceHolder>
-       <link href="styly/default.css" rel="stylesheet"/>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div class="wrapper">
-        <div class="menu">
-            <ul>
-                <li class="navigation_first_item"><a href="default.aspx">Home</a></li>
-                <li><a href="Content.aspx">Content</a></li>
-                <li><a href="Contact.aspx">Contact us</a></li>
-                <li><a href="About.aspx">About us</a></li>
-            </ul>
-         </div>   
-         <div class="clear"> </div>
-      
-    </div>
+    <head runat="server">
+        <title><% = Page.Title %></title>
+        <link href="styly/default.css" rel="stylesheet"/>
+        <asp:ContentPlaceHolder id="Head" runat="server"> </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div class="wrapper">
+                <div class="menu">
+                    <ul>
+                        <li class="navigation_first_item"><a href="default.aspx">Home</a></li>
+                        <li><a href="Content.aspx">Content</a></li>
+                        <li><a href="Contact.aspx">Contact us</a></li>
+                        <li><a href="About.aspx">About us</a></li>
+                    </ul>
+                 </div>   
+                 <div class="clear"></div>
+            </div>
 
-   
-         <div class="content">
-         <asp:ContentPlaceHolder id="Content" runat="server"> </asp:ContentPlaceHolder>
-         </div>
-         <div class="clear"> </div>
+            <div class="content">
+                <asp:ContentPlaceHolder id="Content" runat="server"> </asp:ContentPlaceHolder>
+            </div>
+            <div class="clear"></div>
 
-
-        <div class="footer">
-        <asp:ContentPlaceHolder id="Footer" runat="server"> </asp:ContentPlaceHolder>
-        <h2>Copyright</h2>
-        </div>
-    </form>
-</body>
+            <div class="footer">
+                <h2>Copyright</h2>
+            </div>
+       </form>
+    </body>
 </html>
