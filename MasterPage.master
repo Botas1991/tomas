@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head runat="server">
         <title><% = Page.Title %></title>
-        <link href="styly/default.css" rel="stylesheet"/>
+        <link href="css/default.css" rel="stylesheet"/>
         <asp:ContentPlaceHolder id="Head" runat="server"> </asp:ContentPlaceHolder>
     </head>
     <body>
