@@ -10,8 +10,8 @@ public class Article
     private int id;
     private string tittle;
     private string paragraph;
-    private string path = "C:\\www\\tomas\\DB.txt";
-    //private string path="C:\\Users\\Botas\\Desktop\\www\\tomas\\DB.txt";
+    //private string path = "C:\\www\\tomas\\DB.txt";
+    private string path="d:\\home\\site\\wwwroot\\DB.txt";
     //private string path="C:\\Users\\Snekatis\\Desktop\\Projects\\Tomas\\DB.txt";
 
     public Article(int id, string tittle, string paragraph)
