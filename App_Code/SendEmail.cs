@@ -55,8 +55,8 @@ public class SendEmail
 
         Attachment att1 = new Attachment("C:\\www\\tomas\\" + prop_filename);
         Attachment att = new Attachment("C:\\www\\tomas\\" + prop_filename);
-        //string imagepath = "C:\\www\\tomas\\obrazky\\Like.jpg";
-        //string imagepath="C:\\Users\\Botas\\Desktop\\www\\tomas\\obrazky\\Like.jpg";
+        //string imagepath = "C:\\www\\tomas\\img\\Like.jpg";
+        //string imagepath="C:\\Users\\Botas\\Desktop\\www\\tomas\\img\\Like.jpg";
         var fromAddress = new MailAddress("tomas.hqtesting@gmail.com", "Server Service Mail");
         var toAddress = new MailAddress("TBotor@seznam.cz", "To Name");
         const string fromPassword = "tomashqtesting";
