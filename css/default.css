@@ -109,15 +109,14 @@ body
 
  /* Dalsi styly */
  
- .Content_CRUD
+ .Post_CRUD
  {
     background-color: rgb(150,200,255);
     padding: 20px 20px 20px 20px;
-    width:100%;
     
  }
  
- .Content_CRUD td
+ .Post_CRUD td
  {
     	padding: 30px;    
  }

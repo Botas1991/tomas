@@ -13,28 +13,28 @@ public class Article
     private string path = "C:\\www\\tomas\\DB.txt";
     //private string path="C:\\Users\\Botas\\Desktop\\www\\tomas\\DB.txt";
     //private string path="C:\\Users\\Snekatis\\Desktop\\Projects\\Tomas\\DB.txt";
-	
+
     public Article(int id, string tittle, string paragraph)
-	{
+    {
         this.id = id;
         this.tittle = tittle;
         this.paragraph = paragraph;
-       
-	}
+
+    }
 
     public Article()
-    { 
+    {
     }
 
     public string prop_tittle
     {
-        get{return tittle;}
-        set{tittle = value;}
+        get { return tittle; }
+        set { tittle = value; }
     }
     public string prop_paragraph
     {
-        get {return paragraph;}
-        set {paragraph = value;}
+        get { return paragraph; }
+        set { paragraph = value; }
     }
     public int prop_id
     {

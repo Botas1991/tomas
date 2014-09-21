@@ -11,6 +11,16 @@ public class SendEmail
     private string from;
     private string body;
     private string subject;
+    public System.IO.Stream attach;
+    private string filename;
+
+    public string prop_filename
+    {
+        get { return filename; }
+        set { filename = value; }
+    }
+
+ 
 
     public SendEmail()
     { }
@@ -43,6 +53,10 @@ public class SendEmail
     public void Send()
     {
 
+        Attachment att1 = new Attachment("C:\\www\\tomas\\" + prop_filename);
+        Attachment att = new Attachment("C:\\www\\tomas\\" + prop_filename);
+        //string imagepath = "C:\\www\\tomas\\obrazky\\Like.jpg";
+        //string imagepath="C:\\Users\\Botas\\Desktop\\www\\tomas\\obrazky\\Like.jpg";
         var fromAddress = new MailAddress("tomas.hqtesting@gmail.com", "Server Service Mail");
         var toAddress = new MailAddress("TBotor@seznam.cz", "To Name");
         const string fromPassword = "tomashqtesting";
@@ -61,7 +75,13 @@ public class SendEmail
             Subject = prop_subject,
             Body = prop_body 
         })
+        
         {
+            if (true == ok)
+            {
+               
+                message.Attachments.Add(att);
+            }
             smtp.Send(message);
         }
 
@@ -73,10 +93,16 @@ public class SendEmail
             Body = kopie + prop_body
         })
         {
+            if (true == ok)
+            {
+                message.Attachments.Add(att1);
+            }
             smtp.Send(message);
         }
 
 
     }
 
+
+    public bool ok { get; set; }
 }
